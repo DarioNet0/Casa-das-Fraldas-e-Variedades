@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+.gato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gato h1 {
+    font-size: 50px ;
+}
