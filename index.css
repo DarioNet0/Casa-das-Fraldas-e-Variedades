@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+#topbar {
+    height: 15px;
+    background-image: linear-gradient(to right, red, orange
+    );
+  display:flex;
+  justify-content: center;
+  align-items: bottom;
+ 
+}
+#unico-1 {
+    background-color: white;
+    padding: 25px;
+
+}
+.linha-top {
+    display: flex;
+    align-items: center;
+}
+.linha-top span {
+    margin-left: 100px;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 50px
+}
+.linha-top ion-icon {
+    margin-left: 950px;
+}
+.linha-top input {
+    margin-left: 10px;
+}
+.linha-bottom {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    font-size: 35px;
+}
+.home {
+    margin-right: 15px;
+}
+#unico-2 {
+    height: 530px;
+    background-image: linear-gradient(to right, red, orange
+    );
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+}
+
