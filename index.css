@@ -12,23 +12,14 @@ body {
 }
 #unico-1 {
     background-color: white;
-    padding: 25px;
-
 }
 .linha-top {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
-.linha-top span {
-    margin-left: 100px;
-    font-family: 'Six Caps', sans-serif;
-    font-size: 50px
-}
-.linha-top ion-icon {
-    margin-left: 950px;
-}
-.linha-top input {
-    margin-left: 10px;
+.linha-top p {
+    justify-content: center;
+    font-size: 50px;
 }
 .linha-bottom {
     font-family: 'Open Sans', sans-serif;
@@ -36,16 +27,25 @@ body {
     justify-content: center;
     gap: 150px;
     font-size: 35px;
+    margin-bottom: 50px;
 }
 .home {
     margin-right: 15px;
 }
-#unico-2 {
-    height: 530px;
-    background-image: linear-gradient(to right, red, orange
-    );
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.slider {
     display: flex;
-    justify-content: center;
-    align-items: bottom;
+    transition: transform 1s ease-in-out;
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
 }
 

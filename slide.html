@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Substituir Imagem em Loop com Deslize Automático</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slider img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Substituição de Imagem em Loop com Deslize Automático</h1>
+    <div class="container">
+        <div class="slider">
+            <img src="./Assets/Moda Feminina.png" alt="Imagem 1">
+            <img src="./Assets/Moda Masculina.png" alt="Imagem 2">
+            <img src="./Assets/Moda Infantil.png" alt="Imagem 3">
+        </div>
+    </div>
+    <script>
+        const slider = document.querySelector('.slider');
+
+        function slideImages() {
+            slider.style.transition = 'transform 1s ease-in-out';
+            slider.style.transform = 'translateX(-100%)';
+
+            setTimeout(() => {
+                slider.appendChild(slider.firstElementChild);
+                slider.style.transition = 'none';
+                slider.style.transform = 'translateX(0)';
+            }, 1000);
+        }
+
+        setInterval(slideImages, 3000); // Alterna as imagens a cada 3 segundos (3000 milissegundos)
+    </script>
+</body>
+</html>
