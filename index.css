@@ -16,27 +16,93 @@ body {
 .linha-top {
     display: flex;
     justify-content: center;
+    gap: 40px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+
 }
 .linha-top p {
     justify-content: center;
-    font-size: 50px;
+    font-size: 80px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    
 }
 .linha-bottom {
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 150px;
     font-size: 35px;
-    margin-bottom: 50px;
+    margin-bottom: 2ch;
+}
+.feminina {
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.barraF {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, red, orange
+    );;
+    transition: width 0.3s ease-out; 
+}
+.activeF {
+    width: 100%; 
 }
 .home {
     margin-right: 15px;
+}
+.masculina {
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.barraM {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, red, orange
+    );;
+    transition: width 0.3s ease-out; 
+}
+.activeM {
+    width: 100%;
+}
+.kid {
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.barraK {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, red, orange
+    );;
+    transition: width 0.3s ease-out; 
+}
+.activeK {
+        width: 100%;
 }
 .container {
     position: relative;
     overflow: hidden;
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
 .slider {
@@ -48,4 +114,5 @@ body {
     max-width: 100%;
     height: auto;
 }
+
 

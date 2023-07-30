@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa das Fraldas</title>
@@ -16,21 +17,26 @@
     </div>
     <div id="unico-1">
         <div class="linha-top">
-            <p>
-                Casa das Fraldas e Variedades
-            </p>
+            <p>Casa</p>
+            <p>das</p>
+            <p>Fraldas</p>
+            <p>e</p>
+            <p>Variedades</p>
         </div>
         <div class="linha-bottom">
-            <span>
+            <div class="feminina" onmouseover="showBarF()" onmouseout="hideBarF()">
                 <ion-icon name="home" class="home"></ion-icon>
                 Feminino
-            </span>
-            <span>
+                <div class="barraF"></div>
+            </div>
+            <div class="masculina" onmouseover="showBarM()" onmouseout="hideBarM()">
                 Masculino
-            </span>
-            <span>
-                kids
-            </span>
+                <div class="barraM"></div>
+            </div>
+            <div class="kid" onmouseover="showBarK()" onmouseout="hideBarK()">
+                Kids
+                <div class="barraK"></div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -40,10 +46,6 @@
             <img src="./Assets/Moda Infantil.jpg" alt="Imagem 3">
         </div>
     </div>
-
-
-
-
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

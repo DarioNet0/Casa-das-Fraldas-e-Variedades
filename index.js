@@ -12,3 +12,32 @@ function slideImages() {
 }
 
 setInterval(slideImages, 3000);
+
+function showBarF() {
+    const barraF = document.querySelector('.barraF');
+    barraF.classList.add('activeF');
+}
+function hideBarF() {
+    const barraF = document.querySelector('.barraF');
+    barraF.classList.remove('activeF');
+}
+
+function showBarM() {
+    const barraM = document.querySelector('.barraM');
+    barraM.classList.add('activeM');
+}
+function hideBarM() {
+    const barraM = document.querySelector('.barraM');
+    barraM.classList.remove('activeM');
+}
+
+function showBarK() {
+    const barraK = document.querySelector('.barraK');
+    barraK.classList.add('activeK');
+}
+function hideBarK() {
+    const barraK = document.querySelector('.barraK');
+    barraK.classList.remove('activeK');
+}
+  
+  
